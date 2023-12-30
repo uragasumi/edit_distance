@@ -13,7 +13,7 @@ Edit distance, word error rate, hypothesis-reference alignment
   Shinsuke Sakai [ sakai Mon Dec 25 23:51:15 2023 ]
                  [ sakai Sat Dec 30 23:58:00 2023 ]
 ---
-
+    
 align_intervals_hyp_to_ref(h, r, h_ivls):
     
 PARAMETERS
@@ -25,4 +25,5 @@ RETURNS
     r_ivls        a list of intervals in r represented as 2-tuples.
     hp            hypoethesis with parens inserted.
     rp            reference with parens inserted.
+
     
