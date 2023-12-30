@@ -29,7 +29,9 @@ RETURNS
 
 ```
 # ipython での簡単な使用例です。
- 
+
+In [49]: from edit_distance import align_intervals_hyp_to_ref
+
 In [55]: h = list('abacaa')
 
 In [56]: r = list('abbbacccaa')
