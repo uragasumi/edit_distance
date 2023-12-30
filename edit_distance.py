@@ -312,9 +312,9 @@ EXAMPLE
     gap = 0
     for ivl in ivls:
         left, right = ivl
-        tokens.insert(left + gap, lpar)
+        tokens_p.insert(left + gap, lpar)
         gap = gap + 1
-        tokens.insert(right + 1 + gap, rpar)
+        tokens_p.insert(right + 1 + gap, rpar)
         gap = gap + 1
     
     return tokens
