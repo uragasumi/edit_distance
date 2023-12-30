@@ -317,7 +317,7 @@ EXAMPLE
         tokens_p.insert(right + 1 + gap, rpar)
         gap = gap + 1
     
-    return tokens
+    return tokens_p
 
 
 def align_intervals_hyp_to_ref(h, r, h_ivls):
