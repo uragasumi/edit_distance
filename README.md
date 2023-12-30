@@ -26,4 +26,24 @@ RETURNS
     hp            hypoethesis with parens inserted.
     rp            reference with parens inserted.
 ```
+
+```
+# ipython での簡単な使用例です。
  
+In [55]: h = list('abacaa')
+
+In [56]: r = list('abbbacccaa')
+
+In [57]: h, r
+Out[57]: 
+(['a', 'b', 'a', 'c', 'a', 'a'],
+ ['a', 'b', 'b', 'b', 'a', 'c', 'c', 'c', 'a', 'a'])
+
+In [58]: align_intervals_hyp_to_ref(h, r, [(1, 1), (3, 3)])
+Out[58]: 
+([(1, 3), (5, 7)],
+ ['a', '(', 'b', ')', 'a', '(', 'c', ')', 'a', 'a'],
+ ['a', '(', 'b', 'b', 'b', ')', 'a', '(', 'c', 'c', 'c', ')', 'a', 'a'])
+
+In [59]: 
+```
