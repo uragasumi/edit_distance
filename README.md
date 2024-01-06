@@ -14,8 +14,8 @@ Edit distance, word error rate, hypothesis-reference alignment
 - align_intervals_ref_to_hyp(r, h, r_ivls)
 
   Shinsuke Sakai [ sakai Mon Dec 25 23:51:15 2023 ]  
-                 [ sakai Sat Dec 30 23:58:00 2023 ]  
-                 [ sakai Sun Jan  7 00:09:54 2024 ] 
+  &emsp;         [ sakai Sat Dec 30 23:58:00 2023 ]  
+  &emsp;         [ sakai Sun Jan  7 00:09:54 2024 ] 
 ---
 ```
 align_intervals_hyp_to_ref(h, r, h_ivls):
