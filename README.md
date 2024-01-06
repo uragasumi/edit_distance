@@ -53,3 +53,42 @@ Out[58]:
 
 In [59]: 
 ```
+
+```
+align_intervals_ref_to_hyp(r, h, r_ivls):
+
+PARAMETERS
+    r             reference, a list of strings.
+    h             hypoethesis, a list of strings.
+    r_ivls        a list of intervals in r represented as 2-tuples.
+
+RETURNS
+    h_ivls        a list of intervals in h represented as 2-tuples.
+    rp            reference with parens inserted.
+    hp            hypoethesis with parens inserted.
+
+```
+
+```
+# ipython での簡単な使用例です。
+
+In [199]: r = list('abbbacccaa')
+
+In [200]: h = list('abacaad')
+
+In [201]: r
+Out[201]: ['a', 'b', 'b', 'b', 'a', 'c', 'c', 'c', 'a', 'a']
+
+In [202]: h
+Out[202]: ['a', 'b', 'a', 'c', 'a', 'a', 'd']
+
+In [203]: align_intervals_ref_to_hyp(r, h, [(1, 3), (5,7)])
+Out[203]: 
+([(1, 1), (3, 3)],
+ ['a', '(', 'b', 'b', 'b', ')', 'a', '(', 'c', 'c', 'c', ')', 'a', 'a'],
+ ['a', '(', 'b', ')', 'a', '(', 'c', ')', 'a', 'a', 'd'])
+
+In [204]: 
+
+```
+
